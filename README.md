@@ -1,18 +1,13 @@
-# Nickysemenza Tap
+# nickysemenza/tap
 
-## How do I install these formulae?
+Homebrew tap for [Overboard](https://github.com/nickysemenza/overboard), a
+menu-bar launcher and clipboard manager for macOS 26+.
 
-`brew install nickysemenza/tap/<formula>`
-
-Or `brew tap nickysemenza/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "nickysemenza/tap"
-brew "<formula>"
+```sh
+brew install --cask nickysemenza/tap/overboard
 ```
 
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+The cask downloads the signed and notarized zip from Overboard's GitHub
+Releases. New releases bump `Casks/overboard.rb` here automatically (the
+Release workflow in the app repo commits the version and checksum), so
+`brew upgrade` picks them up.
