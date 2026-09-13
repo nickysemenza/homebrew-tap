@@ -1,9 +1,9 @@
 cask "overboard" do
-  version "0.4.0"
+  version "0.3.0"
   # `version` and `sha256` are bumped by the Release workflow in
   # https://github.com/nickysemenza/overboard after each release's zip is
   # uploaded; don't edit them by hand.
-  sha256 "9640b7e2fdd05ee3fd0af2360f963564a317eaf742d5a06eebf1f8bc782f4a43"
+  sha256 "03bcc6f6a05e6c3141bd7ed22a0f64315b92df23c2d0c4c18657f7090cc38159"
 
   url "https://github.com/nickysemenza/overboard/releases/download/v#{version}/Overboard-#{version}.zip"
   name "Overboard"
@@ -16,7 +16,7 @@ cask "overboard" do
   end
 
   # :tahoe is macOS 26, the oldest release Overboard builds against.
-  depends_on macos: :tahoe
+  depends_on macos: :sonoma
 
   app "Overboard.app"
 
