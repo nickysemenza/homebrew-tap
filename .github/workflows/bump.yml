@@ -58,9 +58,11 @@ jobs:
           VERSION: ${{ inputs.version }}
         run: brew bump-cask-pr --write-only --commit --no-browse --version "$VERSION" "$TAP_NAME/$CASK"
 
+      # No `token` here on purpose: setup-homebrew already installed a global
+      # `http.<server>/.extraheader` with the job token, and passing one again
+      # makes git send two Authorization headers (GitHub answers 400).
       - name: Push
         uses: Homebrew/actions/git-try-push@f8d4222eb633e65c2a0157383cf80861fc7fae7f # 2026.09.07.1
         with:
-          token: ${{ github.token }}
           directory: ${{ steps.set-up-homebrew.outputs.repository-path }}
           branch: main
