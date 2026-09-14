@@ -1,9 +1,9 @@
 cask "overboard" do
-  version "0.5.0"
+  version "0.6.0"
   # `version` and `sha256` are bumped by the Release workflow in
   # https://github.com/nickysemenza/overboard after each release's zip is
   # uploaded; don't edit them by hand.
-  sha256 "4fbdb3373d751abcef3bd6a7d49c8fad72eca7e9b243205bff5f709bec8e6ecf"
+  sha256 "0ddcd8d00d1c323e6a1ec642f859ce50ca954c793237ef4b9739d1c7c0ed509e"
 
   url "https://github.com/nickysemenza/overboard/releases/download/v#{version}/Overboard-#{version}.zip"
   name "Overboard"
