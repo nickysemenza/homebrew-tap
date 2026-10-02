@@ -1,9 +1,9 @@
 cask "macaudit" do
-  version "0.1.2"
+  version "0.1.3"
   # `version` and `sha256` are bumped by the Release workflow in
   # https://github.com/nickysemenza/macaudit after each release's zip is
   # uploaded; don't edit them by hand.
-  sha256 "5f3252a96030558295f5e692a1d8acea06a1df971fd78518de50faa0b852b5be"
+  sha256 "8c3a2aeb61b533c69b63b233303da0b6d4fe670961014d844ebdf87a006676f2"
 
   url "https://github.com/nickysemenza/macaudit/releases/download/v#{version}/MacAudit-#{version}.zip"
   name "MacAudit"
