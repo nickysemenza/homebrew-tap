@@ -11,9 +11,9 @@ cask "overboard" do
   desc "Menu-bar launcher and clipboard manager"
   homepage "https://github.com/nickysemenza/overboard"
 
-  # Per-merge builds are GitHub prereleases, which :github_latest ignores, so
-  # livecheck would report the last tagged release and `brew audit --online`
-  # (run by bump.yml) would fail on the mismatch.
+  # Per-merge builds are published with --latest=false, so :github_latest
+  # would report the last tagged release and `brew audit --online` (run by
+  # bump.yml) would fail on the mismatch.
   livecheck do
     skip "Bumped by nickysemenza/overboard CI on every merge"
   end
