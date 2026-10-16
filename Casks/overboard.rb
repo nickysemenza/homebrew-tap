@@ -1,10 +1,10 @@
 cask "overboard" do
-  version "0.10.1-18-gecaaed5"
+  version "0.10.1-19-g7615827"
   # `version` and `sha256` are bumped by CI in
   # https://github.com/nickysemenza/overboard after every merge to main
   # (versions like 0.10.1-13-gabc1234) and every tagged release; don't edit
   # them by hand.
-  sha256 "ea0604a8c635b125a00e22d098ea9cc64e676f4a7fd7a9d3d43cc200b6a9746a"
+  sha256 "50b65eed626ef889f1f1db968ad44f95d94b54b5931f4b982cdd1e469a30f620"
 
   url "https://github.com/nickysemenza/overboard/releases/download/v#{version}/Overboard-#{version}.zip"
   name "Overboard"
