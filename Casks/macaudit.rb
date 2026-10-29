@@ -1,10 +1,10 @@
 cask "macaudit" do
-  version "0.1.3-51-g985d260"
+  version "0.1.3-52-gc993348"
   # `version` and `sha256` are bumped by CI in
   # https://github.com/nickysemenza/macaudit after every merge to main
   # (versions like 0.1.3-5-gabc1234) and every tagged release; don't edit
   # them by hand.
-  sha256 "db817188c18b5f85b529f2661a095b0897df60da595155235cc7ae2f156a5d5d"
+  sha256 "06a1a658f81eb31675aeb89817c5d49ec884fa25cffd87ec63198b86709bc50c"
 
   url "https://github.com/nickysemenza/macaudit/releases/download/v#{version}/MacAudit-#{version}.zip"
   name "MacAudit"
